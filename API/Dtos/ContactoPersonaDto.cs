@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace API.Dtos;
-public class ContratoPersonaDto
+public class ContactoPersonaDto
 {
     public int Id { get; set; }
 
