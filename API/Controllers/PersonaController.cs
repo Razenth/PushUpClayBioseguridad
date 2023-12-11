@@ -79,22 +79,15 @@ namespace API.Controller
                 PersonaDto.Id = id;
             }
 
-            if(PersonaDto.Id != id)
+            if (PersonaDto.Id != id)
             {
                 return BadRequest();
             }
 
-            if(PersonaDto == null)
+            if (PersonaDto == null)
             {
                 return NotFound();
             }
-
-             // Por si requiero la fecha actual
-            /*if (PersonaDto.Fecha == DateTime.MinValue)
-            {
-                PersonaDto.Fecha = DateTime.Now;
-            }*/
-
             var result = _mapper.Map<Persona>(PersonaDto);
             _unitOfWork.Personas.Update(result);
             await _unitOfWork.SaveAsync();
