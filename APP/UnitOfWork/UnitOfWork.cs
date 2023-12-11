@@ -201,7 +201,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
         }
     }
 
-    private UserRepository _user;  //CiudadRepository _ciudad
+    private UserRepository _user;
     public IUser Users
     {
         get
@@ -214,7 +214,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
         }
     }
     
-    private RolRepository _rol;  //CiudadRepository _ciudad
+    private RolRepository _rol;
     public IRol Rols
     {
         get
