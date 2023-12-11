@@ -5,13 +5,13 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace API.Dtos;
-public class DireccionPersonaDto
+public class ContratoPersonaDto
 {
     public int Id { get; set; }
-    
-    public string Direccion { get; set; }
 
-    public int IdTpDireccionFk { get; set; }
+    public string Descripcion { get; set; }
+
+    public int IdTpContactoFk { get; set; }
 
     public int IdPersonaFk { get; set; }
 }
